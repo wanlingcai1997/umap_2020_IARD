@@ -153,13 +153,7 @@ Note:
 
 If you use ReDial-Intent dataset for your research work, please cite the following paper:
 
-- Wanling Cai and Li Chen. 2020. Predicting User Intents and Satisfaction with
-
-  Dialogue-based Conversational Recommendations. In *Proceedings of the 28th*
-
-  *ACM Conference on User Modeling, Adaptation and Personalization (UMAP*
-
-  *'20)*, July 14-17, 2020.
+- Wanling Cai and Li Chen. 2020. Predicting User Intents and Satisfaction with Dialogue-based Conversational Recommendations. In *Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization (UMAP '20)*, July 14-17, 2020.
 
 **Bibtex entry:**
 
