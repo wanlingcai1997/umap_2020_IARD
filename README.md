@@ -1,7 +1,5 @@
 # Recommendation Dialogue Intent (ReDial-Intent) Dataset
 
-[TOC]
-
 ## Introduction
 
 The ReDial-Intent dataset is a labeled recommendation dialogue dataset (the raw dialogues are from <a href="https://redialdata.github.io/website/" target='_blank'>ReDial</a> [[1](#ref1)]). This dataset contains 336 multi-turn recommendation dialogues with 4,583 utterances that were annotated with user intents and recommender actions at the utterance level. In the following, we will introduce the dialogue data we have collected and processed, the two taxonomies we have established respectively for user intents and recommender actions, and the labeled ReDial-Intent dataset (more details can be found in [[2](#ref2)]).
