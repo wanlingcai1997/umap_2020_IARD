@@ -1,4 +1,4 @@
-# Recommendation Dialogue Intent (ReDial-Intent) Dataset
+# Recommendation Dialogue Intent Dataset (ReDial-Intent)
 
 ## Introduction
 
