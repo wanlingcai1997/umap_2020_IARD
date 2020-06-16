@@ -139,10 +139,10 @@ Note:
 		"S7": {
 			"utterance_pos": 7,
 			"worker_id": 14,
-      "role": "seeker",
-   		"utterance_text": "I did see that one, but I didn't really like it...I do love 80s movies though",
-      "top-level intent/action": ["GiveFeedback"],
-      "sub-intent/action": ["REJ","CRI-A"]
+      			"role": "seeker",
+   			"utterance_text": "I did see that one, but I didn't really like it...I do love 80s movies though",
+      			"top-level intent/action": ["GiveFeedback"],
+      			"sub-intent/action": ["REJ","CRI-A"]
 		},
 		...
 	}
