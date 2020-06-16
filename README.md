@@ -1,8 +1,12 @@
-# Recommendation Dialogue Intent Dataset (ReDial-Intent)
+# **Intent Annotation of Recommendation Dialogue (IARD) Dataset**
+
+[TOC]
+
+
 
 ## Introduction
 
-The ReDial-Intent dataset is a labeled recommendation dialogue dataset (the raw dialogues are from <a href="https://redialdata.github.io/website/" target='_blank'>ReDial</a> [[1](#ref1)]). This dataset contains 336 multi-turn recommendation dialogues with 4,583 utterances that were annotated with user intents and recommender actions at the utterance level. In the following, we will introduce the dialogue data we have collected and processed, the two taxonomies we have established respectively for user intents and recommender actions, and the labeled ReDial-Intent dataset (more details can be found in [[2](#ref2)]).
+The IARD dataset is a labeled recommendation dialogue dataset (the raw dialogues are from <a href="https://redialdata.github.io/website/" target='_blank'>ReDial</a> [[1](#ref1)]). This dataset contains 336 multi-turn recommendation dialogues with 4,583 utterances that were annotated with user intents and recommender actions at the utterance level. In the following, we will introduce the dialogue data we have collected and processed, the two taxonomies we have established respectively for user intents and recommender actions, and our IARD dataset (more details can be found in [[2](#ref2)]).
 
 ## Recommendation Dialogue Data
 
@@ -14,7 +18,7 @@ We processed the raw dialogue data in ReDial (that contains 11,348 dialogues) by
 
 1. We filtered out dialogues that contain less than three dialogue turns (one dialogue turn denotes a consecutive utterance-response pair: Utterance is from seeker and response is from recommender) and less than four different recommended movies.
 2. We removed those with inconsistent answers from seekers and recommenders to the post-conversation reflective questions.
-3.  We then randomly sampled some satisfactory recommendation dialogues (SAT-Dial) where one recommended movie was not liked by the seeker but a subsequent one was accepted by her/him. These dialogues were aimed to capture the seeker's feedback intents about the recommendation when s/he was not satisfied with it, and furthermore the actions taken by the human recommender that helped the seeker to find a satisfactory item later.
+3. We then randomly sampled some satisfactory recommendation dialogues (SAT-Dial) where one recommended movie was not liked by the seeker but a subsequent one was accepted by her/him. These dialogues were aimed to capture the seeker's feedback intents about the recommendation when s/he was not satisfied with it, and furthermore the actions taken by the human recommender that helped the seeker to find a satisfactory item later.
 4. We also sampled some unsatisfactory recommendation dialogues (unSAT-Dial) by choosing the dialogues that do not contain any recommendations accepted by the seeker. These dialogues can be useful for detecting what kind of interaction may lead to unsuccessful recommendation. 
 
 Finally, we got 253 satisfactory dialogues (SAT-Dial) and 83 unsatisfactory dialogues (unSAT-Dial) (see [Table 1](#table1) with the statistics).
@@ -44,16 +48,16 @@ The established taxonomy for user intents is aimed to classify the types of utte
 
 | Intent (Code)              | Description                                                  | Example                                                      |
 | -------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Ask for Recommendation** |||                                                              |                                                              |
+| **Ask for Recommendation** |                                                              |                                                              |
 | Initial Query (IQU)        | Seeker asks for a recommendation in the first query.         | *"I like comedy do you know of any good ones?"*              |
 | Continue (CON)             | Seeker asks for more recommendations in the subsequent query. | *"Do you have any other suggestions?"*                       |
 | Reformulate (REF)          | Seeker restates her/his query with or without clarification/further constraints. | *"Maybe I am not being clear. I want something that is in the theater now."* |
 | Start Over (STO)           | Seeker starts a new query to ask for recommendations.        | *"Anything that I can watch with my kids under 10."*         |
-| **Add Details** |||                                                              |                                                              |
+| **Add Details**            |                                                              |                                                              |
 | Provide Preference (PRO)   | Seeker provides specific preference for the item s/he is looking for. | *"I usually enjoy movies with Seth Rogen and Jonah Hill."*   |
 | Answer (ANS)               | Seeker answers the question issued by the recommender.       | *"Maybe something with more action." (Q: "What kind of fun movie you look for?")* |
 | Ask Opinion (ASK)          | Seeker asks the recommender's personal opinions.             | *"I really like Reese Witherspoon. How about you?"*          |
-| **Give Feedback**|||                                                               |                                                              |
+| **Give Feedback**          |                                                              |                                                              |
 | Seen (SEE)                 | Seeker has seen the recommended item before.                 | *"I have seen that one and enjoyed it."*                     |
 | Accept (ACC)               | Seeker likes the recommended item.                           | *"Awesome, I will check it out."*                            |
 | Reject (REJ)               | Seeker dislikes the recommended item.                        | *"I hated that movie. I did not even crack a smile once."*   |
@@ -91,7 +95,7 @@ From recommenders' perspective, we have characterized their behavior at 4 top-le
 
 
 
-## ReDial-Intent
+## IARD Dataset
 
 ### Data Annotation
 
@@ -99,7 +103,7 @@ After the two taxonomies were established, we asked two annotators to label all 
 
 ### Download
 
-Please download the ReDial-Intent dataset from <a href="https://github.com/wanlingcai1997/umap_2020_ReDial_Intent" target='_blank'>github</a>. 
+Please download the IARD dataset from <a href="https://github.com/wanlingcai1997/umap_2020_IARD.git" target='_blank'>github</a>. 
 
 ### Data Fields
 
@@ -151,14 +155,14 @@ Note:
 
 ## Citation
 
-If you use ReDial-Intent dataset for your research work, please cite the following paper:
+If you use IARD dataset for your research work, please cite the following paper:
 
 - Wanling Cai and Li Chen. 2020. Predicting User Intents and Satisfaction with Dialogue-based Conversational Recommendations. In *Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization (UMAP '20)*, July 14-17, 2020.
 
 **Bibtex entry:**
 
 ```latex
-@inproceedings{ReDial-Intent,
+@inproceedings{IARD,
   author = {Wanling Cai and Li Chen},
   title = {Predicting User Intents and Satisfaction with Dialogue-based Conversational Recommendations},
   booktitle = {Proceedings of the 28th ACM Conference on User Modeling, Adaptation and Personalization}
@@ -171,10 +175,10 @@ If you use ReDial-Intent dataset for your research work, please cite the followi
 
 ## Usage License
 
-The ReDial-Intent dataset can be used for any research purposes under the following condition:
+The IARD dataset can be used for any research purposes under the following condition:
 
 - The user may not imply any endorsement from the authors of the paper or Hong Kong Baptist University.
-- The user must acknowledge the use of the ReDial-Intent dataset in her/his publications (see above for the citation information).
+- The user must acknowledge the use of the IARD dataset in her/his publications (see above for the citation information).
 - The user may redistribute the dataset as long as it is distributed under the same license conditions.
 - The user can not use this dataset for any commercial or revenue-bearing purposes, without obtaining permission from the authors of [[2](#ref2)] (i.e., Wanling Cai and Li Chen).
 
