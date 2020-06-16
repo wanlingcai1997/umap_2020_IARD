@@ -1,7 +1,5 @@
 # **Intent Annotation of Recommendation Dialogue (IARD) Dataset**
 
-[TOC]
-
 
 
 ## Introduction
